@@ -234,6 +234,7 @@ public class VelocityServer implements ProxyServer, ForwardingAudience {
       "console", "cm", "configuration"})
   void start() {
     logger.info("Booting up {} {}...", getVersion().getName(), getVersion().getVersion());
+    logger.info("Fork by: GenzNetwork");
     console.setupStreams();
     pluginManager.registerPlugin(this.createVirtualPlugin());
 
